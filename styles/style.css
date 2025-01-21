@@ -46,7 +46,8 @@ header{
 .navbar{
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1160px;
+    margin: 0 auto;
 }
 .nav-item{
     list-style: none;
@@ -57,14 +58,11 @@ header{
     text-decoration: none;
     font-weight: 500;
 }
-.navbar{
-    max-width: 1440px;
-    margin: 0 auto; 
-  }
-
 /* banner styles */
  .banner{
   align-items: center;
+  max-width: 1160px;
+  margin-bottom: 60px;
   gap: 50px;
  }
  .banner-title{
@@ -80,30 +78,61 @@ header{
 /* standard Curriculum */
 .standard-section{
   background-image: url('../assets/bg.png');
-  max-width: 1440px;
+  max-width: 1160px;
+  margin: 0 auto;
 }
 .standard-content{
   font-size: 2.8rem;
   text-align: center;
   padding-top: 60px;
+  padding-bottom: 0;
 }
 .div-container{
   max-width: 1160px;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+  display: flex;
   gap: 28px;
   text-align: center;
-  margin: 140px 200px;
 }
-.div-card{
-  /* width: 360px;
-  height: 470px; */
-  border: 1px solid black;
+.div-card-1, .div-card-2, .div-card-3{
+  padding: 20px;
   border-radius: 18px;
-  background-color: #DEF5FF;
+  /* box-shadow: 10px 11px 0px 1px gray; */
 }
- 
-
+.div-card-1{
+  background-image: linear-gradient(to bottom, #DEF5FF, #FFFFFF );
+  border: 1px solid #DEF5FF;
+}
+.div-card-2{
+  background-image: linear-gradient(to bottom, #FFF4DC, #FFFFFF );
+  border: 1px solid #FFF4DC;
+}
+.div-card-3{
+  background-image: linear-gradient(to bottom, #F2E8FF, #FFFFFF );
+  border: 1px solid #F2E8FF;
+}
+#read-more-1{
+  color: #64C8FF;
+}
+#read-more-2{
+  color: #F0AA00;
+}
+#read-more-3{
+  color: #8700FF;
+}
+.icon{
+  display: inline-block;
+  background-color: rgba(254, 163, 1, 1);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+.icon-container{
+  text-align: center;
+  padding: 60px;
+}
 
 /* small device responsive styles */
 @media screen and (max-width: 576px) {
@@ -130,7 +159,21 @@ header{
 .banner-content{
   text-align: center;
 }
-
+.div-container{
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+.div-card-1, .div-card-2, .div-card-3{
+  width: 90%;
+  max-width: 400px;
+}
+.standard-section{
+  margin: 600px 0 0 0;
+}
 }
 /* large device responsive styles */
 @media screen and (min-width: 576px){
