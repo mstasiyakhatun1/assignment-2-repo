@@ -119,6 +119,7 @@ header{
 #read-more-3{
   color: #8700FF;
 }
+/* icon styles */
 .icon{
   display: inline-block;
   background-color: rgba(254, 163, 1, 1);
@@ -131,9 +132,17 @@ header{
 }
 .icon-container{
   text-align: center;
-  padding: 60px;
+  padding-top: 60px;
+  padding-bottom: 0;
 }
-
+/* stories image styles */
+.story-img-container, .story-image{
+  gap: 18px;
+}
+.img-text{
+  font-size: 1rem;
+  font-weight: 800;
+}
 /* small device responsive styles */
 @media screen and (max-width: 576px) {
  .school-none, .nav-links, .btn-div{
