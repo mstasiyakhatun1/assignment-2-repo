@@ -48,10 +48,10 @@ header{
     align-items: center;
     max-width: 1440px;
 }
-
 .nav-item{
     list-style: none;
     margin-right: 30px;
+    font-size: 1.25rem;
 }
 .nav-link{
     text-decoration: none;
@@ -73,9 +73,39 @@ header{
  .banner-title{
   font-size: 3.5rem;
   font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 18px;
  }
  .banner-description{
   font-size: 1.25rem;
  }
+ 
 
 
+/* small device responsive styles */
+@media screen and (max-width: 576px) {
+ .school-none, .nav-links, .btn-div{
+    display: none;
+  }
+.hamburger{
+  display: flex;
+  font-size: 30px;
+}
+.banner{
+  flex-direction: column-reverse;
+}
+.banner-image{
+  width: 90%;
+  margin: 20px;
+}
+.banner-content{
+  text-align: center;
+}
+
+}
+/* large device responsive styles */
+@media screen and (min-width: 576px){
+  .hamburger{
+    display: none;
+  }
+}
