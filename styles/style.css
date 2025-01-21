@@ -59,13 +59,10 @@ header{
 }
 .navbar{
     max-width: 1440px;
-    margin: 0 auto;}
+    margin: 0 auto; 
+  }
 
 /* banner styles */
-/* .banner-content{
-  max-width: 1440px;
-  align-items: center;
-} */
  .banner{
   align-items: center;
   gap: 50px;
@@ -80,6 +77,32 @@ header{
   font-size: 1.25rem;
  }
  
+/* standard Curriculum */
+.standard-section{
+  background-image: url('../assets/bg.png');
+  max-width: 1440px;
+}
+.standard-content{
+  font-size: 2.8rem;
+  text-align: center;
+  padding-top: 60px;
+}
+.div-container{
+  max-width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 28px;
+  text-align: center;
+  margin: 140px 200px;
+}
+.div-card{
+  /* width: 360px;
+  height: 470px; */
+  border: 1px solid black;
+  border-radius: 18px;
+  background-color: #DEF5FF;
+}
+ 
 
 
 /* small device responsive styles */
@@ -90,6 +113,12 @@ header{
 .hamburger{
   display: flex;
   font-size: 30px;
+}
+.logo{
+  margin-bottom: 12px;
+}
+.navbar{
+  border-bottom: 1px solid #FF900E;
 }
 .banner{
   flex-direction: column-reverse;
