@@ -41,7 +41,6 @@
 header{
   max-width: 1158px;
   margin: 0 auto;
-  height: 575px;
 }
 .navbar{
     justify-content: space-between;
@@ -78,25 +77,23 @@ header{
 /* standard Curriculum */
 .standard-section{
   background-image: url('../assets/bg.png');
-  max-width: 1160px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .standard-content{
   font-size: 2.8rem;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 0;
 }
 .div-container{
   max-width: 1160px;
   display: flex;
   gap: 28px;
   text-align: center;
+  margin: 0 auto;
 }
 .div-card-1, .div-card-2, .div-card-3{
   padding: 20px;
   border-radius: 18px;
-  /* box-shadow: 10px 11px 0px 1px gray; */
 }
 .div-card-1{
   background-image: linear-gradient(to bottom, #DEF5FF, #FFFFFF );
@@ -136,16 +133,105 @@ header{
   padding-bottom: 0;
 }
 /* stories image styles */
-.story-img-container, .story-image{
+.stories{
+  background-image: linear-gradient(to bottom, #FFFFFF, #f3d197);
+  padding: 50px;
+}
+.story-img-container, .story-images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.story-1, .story-2, .story-3, .story-4, .story-5 {
+  border-radius: 16px 16px 0 0;
+}
+.story-img-top{
+  position: relative;
+}
+.image-texts{
+  background-color: white;
+  border-radius: 16px;
+  height: 100%;
+}
+.text{
+  padding: 45px;
+}
+.pera-text{
+  font-size: 1rem;
 }
 .img-text{
   font-size: 1rem;
   font-weight: 800;
+  padding: 20px;
+}
+.story-btn{
+  height: 38px;
+  color: white;
+  border-radius: 45px;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  bottom: -4%;
+  left: 5%;
+}
+.sky{
+  background-color: #3CD8E8;
+}
+.green{
+  background-color: #95B226;
+}
+.purple{
+  background-color: #5D58F0;
+}
+.view-btn{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* footers styles */
+.footer-section{
+ max-width: 1440px;
+  background-color: #6cbde2;
+  margin: 0 auto;
+}
+.footers{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 0 auto;
+  max-width: 1160px;
+}
+.footer-logo{
+  width: 100px;
+}
+.footer-logo-container{
+  align-items: center;
+}
+.footer-kids{
+  font-size: 3rem;
+  margin: 0 auto;
+}
+.footer-heading{
+  font-size: 1.6rem;
+}
+.footer-text{
+  font-size: 1.25rem;
+}
+marquee{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
 }
 /* small device responsive styles */
 @media screen and (max-width: 576px) {
- .school-none, .nav-links, .btn-div{
+ .school-none, 
+ .nav-links, 
+ .btn-div, 
+ .icon-container, 
+ .story-img{
     display: none;
   }
 .hamburger{
@@ -180,9 +266,25 @@ header{
   width: 90%;
   max-width: 400px;
 }
-.standard-section{
-  margin: 600px 0 0 0;
+/* 
+.icon-container, .story-img{
+  display: none;
+} */
+.footers{
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
 }
+/* story image responsive */
+/* .story-img-container, .story-images {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  /* overflow-y: hidden; */
+/* }
+.story-img, .story-images{
+  width: 100%;
+  height: auto;
+} */
 }
 /* large device responsive styles */
 @media screen and (min-width: 576px){
